@@ -203,10 +203,20 @@
             color: white;
 
          }
+         .hover2{
+            position: absolute;
+            top: 0px;
+            right: 0px;
+            text-align: center;
+            background-color: rgba(0,0,0,0.7);
+            padding: 33px;
+            z-index: 99;
+            display: none;
+            color: white;
+         }
          .img2 .sec1:hover .hover{
             display: block;
          }
-         
          #modal{
             height: 200px;
             top: 0px;
@@ -229,7 +239,7 @@
             display: inline-block;
             position: relative;
             left: 1570px;
-            top: 104px
+            top: 104px;
          }
    </style>
    <script type="text/javascript" src="JS/jquery.js">
@@ -263,7 +273,14 @@
                <p>가격 : 12.345원</p>
             </div>
             </div>
-      <div class="sec2"></div>
+      <div class="sec2">
+            <div class="hover2">
+                  <h1>상품 1</h1>
+                  <p>상품 1 설명 텍스트</p>
+                  <p>가격 : 12.345원</p>
+               </div>
+               </div>  
+      </div>
       <div class="sec3"></div>
    </article>
    <div class="button">홈페이지 바로가기
@@ -284,7 +301,7 @@
    <div id="modal">
    <img src="/xxx.jpg" alt="종료" width="100"  id="close">
      <div id="popup">
-      <img src="/popup2.jpg"  alt="팝업 이미지">
+      <img src="/popup2.jpg"  alt="팝업 이미지" id="img01">
       </div>
       </div>
    <footer>
