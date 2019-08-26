@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>0826평가</title>
+    <style>
+         @charset "utf-8";
+        *{margin: 0; padding: 0; list-style-type: none; text-decoration: none;}       
+        .clearfix::before, .clearfix::after {display: block; content: ''; clear: both;}
+        
+        /*header*/
+        #wrap{ margin: 0 auto;  width: 1200px; background-color: black;}
+        #header{ width:100%; height: 100px; background-color: black}
+        #header > .logo{ width:300px; height: 100px; background-color: black; float: left;}
+        #header > .logo > img{margin: 30px 50px;}
+        
+        
+        /*nav*/
+        #header > .top_menu{ width:900px; height: 100px; background-color: #444; float: left;}
+        .navi_box{ position: relative; z-index: 1;}
+        .navi_box > ul {display: inline-block; line-height: 25px; width: 150px; margin-top: 40px; margin-left: 40px;}
+        .navi_box > ul > li{ width: 200px; text-align: center; background-color:crimson; padding: 10px;}
+        .navi_box > ul > li> a{ display: inline-block; font-size: 18px; font-weight: bold; color: white;
+                                transition:all 1s;}
+        .menu_box{ position: absolute; width:190px; background-color: orange; padding: 15px; transition: all 1s; display: none; margin:  10px -10px;}
+        .menu_box > li > a{ display: block; font-size: 14px; color: white;}
+
+
+        /*slide*/
+        #slide{ width:100%; height: 400px; overflow: hidden;}
+        .slidelist{ position: relative; width: 3600px; height: 400px; }
+        .slidelist .slide_img img{ display: block; width: 1200px; height: 400px;}
+        .slidelist .slide_img{ position: relative; float: left;}
+        .slidelist .slide_img h2{ position: absolute; left: 50%; top: 50%; transform: translate(-50%, -50%); background: rgba(255,255,255,0.7); padding: 10px 100px; border-radius: 50px;}
+        
+     
+        /*contents*/
+        #contents > div{float: left; width: 400px; height: 300px;}
+        #contents > .cont1{background-color: turquoise; text-align: center; position: relative;}
+        #contents > .cont1 > .cont1_1{position: absolute; margin: 30px; line-height: 30px;}
+        #contents > .cont1 > .cont1_2{position: absolute; margin-top: 30px; margin-left: 250px; line-height: 30px;}
+        #contents > .cont1 p{font-size: 14px;}
+
+        #contents > .cont2{background-color: blue; ;position: relative;}
+        #contents > .cont2 > .cont2_1{ position: absolute; display: inline-block; top: 70px; left: 30px;}
+        #contents > .cont2 > .cont2_2{ position: absolute; display: inline-block; top: 70px; left: 150px;}
+        #contents > .cont2 > .cont2_3{ position: absolute; display: inline-block; top: 70px; left: 270px;}        
+        #contents > .cont2 p{text-align: center; padding: 10px; border-radius: 10px; background-color: gray;}
+ 
+        #contents > .cont3{background-color: blueviolet}
+        #contents > .cont3 > .cont3_1{text-align: center; margin-top: 15px;}
+        #contents > .cont3 img{margin-top: 20px;}
+        #contents > .cont3 p{margin-top: 20px;}
+      
+        /*footer*/
+        #footer{width:100%; height: 110px; color: white; position: relative;}
+        #footer h4{ display: inline-block; margin: 30px 40px;}
+        #footer .footer_p{ font-size: 11px; text-align: left; position: absolute; top: 5px; left: 600px;}
+        #footer .footer_img{ position: absolute; left: 900px; display: inline-block; padding: 30px;}
+        
+   </style>
+</head>
+<body>
+    <div id="wrap">
+
+    <!--header-->
+    <header id="header" class="clearfix">
+
+        <h1 class="logo">
+            <img src="images/logo.png" alt="로고">
+        </h1>
+             <nav class="navi_box">
+                <ul>
+                    <li><a href="#">MENU-1</a>
+                        <ul class="menu_box">
+                            <li><a href="#">SubMenu-1</a></li>
+                            <li><a href="#">SubMenu-2</a></li>
+                            <li><a href="#">SubMenu-3</a></li>
+                            <li><a href="#">SubMenu-4</a></li>       
+                        </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li><a href="#">MENU-2</a>
+                        <ul class="menu_box">
+                             <li><a href="#">SubMenu-1</a></li>
+                             <li><a href="#">SubMenu-2</a></li>
+                             <li><a href="#">SubMenu-3</a></li>
+                             <li><a href="#">SubMenu-4</a></li>           
+                        </ul>
+                    </li>
+                </ul>                    
+                 <ul>
+                    <li><a href="#">MENU-3</a>
+                        <ul class="menu_box">
+                            <li><a href="#">SubMenu-1</a></li>
+                            <li><a href="#">SubMenu-2</a></li>
+                            <li><a href="#">SubMenu-3</a></li>
+                            <li><a href="#">SubMenu-4</a></li>         
+                        </ul>
+                    </li>
+                </ul>               
+                <ul>
+                    <li><a href="#">MENU-4</a>
+                        <ul class="menu_box">
+                             <li><a href="#">SubMenu-1</a></li>
+                             <li><a href="#">SubMenu-2</a></li>
+                             <li><a href="#">SubMenu-3</a></li>
+                             <li><a href="#">SubMenu-4</a></li>            
+                        </ul>
+                    </li>
+                </ul>                
+            </nav>
+    </header>
+    
+
+
+    <!--slide-->
+    <section id="slide">
+            <div class="slidelist">
+                    <div class="slide_img">
+                        <h2>슬라이드 타이틀</h2>
+                        <img src="images/images(1).jpg" alt="이미지1">
+                    </div>
+                    <div class="slide_img">
+                        <h2>슬라이드 타이틀</h2>
+                        <img src="images/images(2).jpg" alt="이미지2">
+                    </div>
+                    <div class="slide_img">
+                        <h2>슬라이드 타이틀</h2>
+                        <img src="images/images(3).jpg" alt="이미지3">
+                    </div>
+            </div>
+    </section>
+    
+
+    <!--contents-->
+    <section id="contents" class="clearfix">
+        <div class="cont1">
+            <h3>공지사항</h3>
+               <div class="cont1_1">
+                <h3>내용</h3>
+                <p><a href="#">공지사항 내용입니다.-1</a></p>
+                <p><a href="#">공지사항 내용입니다.-2</a></p>
+                <p><a href="#">공지사항 내용입니다.-3</a></p>
+                <p><a href="#">공지사항 내용입니다.-4</a></p>
+                <p><a href="#">공지사항 내용입니다.-5</a></p>
+               </div>
+               <div class="cont1_2">
+                <h3>날짜</h3>
+                <p>2019-08-01</p>
+                <p>2019-08-01</p>
+                <p>2019-08-01</p>
+                <p>2019-08-01</p>
+                <p>2019-08-01</p>
+               </div>
+
+               
+        </div>
+        <div class="cont2">
+            <div class="cont2_1">
+            <img src="images/icon(1).png" alt="컨텐츠아이콘">
+            <p>이미지1</p>
+            </div>
+            <div class="cont2_2">
+            <img src="images/icon(2).png" alt="컨텐츠아이콘">
+            <p>이미지2</p>
+            </div>
+            <div class="cont2_3">
+            <img src="images/icon(3).png" alt="컨텐츠아이콘">
+            <p>이미지3</p>
+            </div>
+        </div>
+
+
+        <div class="cont3">
+            <div class="cont3_1">
+                <h2>배너</h2>
+                <img src="images/info.png" alt="인포아이콘">
+                <p>배너에 대한 설명을 기재한다.</p>
+            </div>
+        </div>
+    </section>
+   
+    
+    <!--footer-->
+    <footer id="footer">
+        <h4>법적고지</h4>
+        <h4>개인정보취급방침</h4>
+        <h4>개인정보처리방침</h4>
+        <div class="footer_p">
+            <p>사업자번호:111-22-333333</p>
+            <p>상표명 :(주)웹디자인기능사</p>
+            <p>대표자 : 홍길동</p>
+            <p>개인정보관리책임자 : 홍길동</p>
+            <p>상담전화 : 123-123-1234</p>
+            <p>사업장 주소 :경기도</p>
+            <p>e-mail:master@ict.ac.kr</p>
+        </div>
+        <div class="footer_img"> 
+            <img src="images/icon(1).png" alt="아이콘" width="50px">
+            <img src="images/icon(2).png" alt="아이콘" width="50px">
+            <img src="images/icon(3).png" alt="아이콘" width="50px">
+        </div>
+
+    </footer>
+    </div>
+    <script type="text/javascript" src="script/jquery-3.4.1.js"></script>
+    <script>
+            $(document).ready(function(){
+                $(".navi_box > ul > li").mouseover(function(){
+                    $(".navi_box > ul > li > ul").show();
+                })     
+
+                $(".navi_box > ul > li").mouseleave(function(){ 
+                    $(".navi_box > ul > li > ul").hide();
+                })   
+
+
+
+                var slideCount = $(".slide_img").length;
+                var currentIndex = 0;
+                var slidePosition;
+
+                setInterval(function(){
+                    if(currentIndex < slideCount - 1){
+                        currentIndex++;
+                    } 
+                    else {
+                        currentIndex = 0;
+                    }
+                    slidePosition = currentIndex * (-1200)+"px";
+                    $(".slidelist").animate({ left: slidePosition},400);
+                },3000);
+            });
+    </script>
+
+</body>
+</html>
+
