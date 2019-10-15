@@ -14,15 +14,23 @@
                 background-color: #111;
             }
             
-.phone img {
+.phone .phonebg {
 	position: absolute;
 	left: 400px;
 	top: 0;
 	width: 400px;
 	height: 955px;
 	z-index: 0;
+	display:block;
 }
- 
+
+.phone .phoneQR{
+	position: absolute;
+	left: 1000px;
+	top: 200px;
+}
+
+
        /*헤더*/
             header{
                 height: 55px;
@@ -397,8 +405,6 @@
     margin-top: 7px;
 }
 
-.background_mid .mid_notice a:before::{content: ''};
-
 
 
 .background_bot{
@@ -421,16 +427,9 @@
 }
 
 
-@media (max-width:1220px){
-	#body {width: 100%;}
-}
 
-@media (max-width:1024px) {}
-@media (max-width:768px) {}
-@media (max-width:600px) {}
-@media (max-width:480px) {}
-@media (max-width:360px) {
-	.phone {
+@media all and (max-width:500px) {
+	.phone .phonebg{
 		display: none;
 	}
 	#wrap{
@@ -438,3 +437,4 @@
 		top: 0;
 	}
 }
+
