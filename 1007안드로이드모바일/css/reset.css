@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+/*여백 초기화*/
+
+body,div,ul,li,ol,dl,dt,h1,h2,h3,h4,h5,h6,input,fieldset,legend,p,th,td,textarea,button,form{
+    margin: 0;
+    padding: 0;
+}
+
+/*a 링크초기화*/
+
+a{
+    color: #7e7e7e;
+    text-decoration: none;
+    foont-size:5px;
+}
+
+/*폰트 초기화*/
+
+body,input,textarea,select,button,table{
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #7e7e7e;
+    font-size: 12px;
+    
+    
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+    font-size: 12px;
+}
