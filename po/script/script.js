@@ -208,11 +208,11 @@ $('.mNav').click(function(){
         
     });
 
-   $('.se4_text li, .site_btn, tbody a').mouseenter(function(){
+   $('.se4_text li, .site_btn, tbody a, .menu li').mouseenter(function(){
        cursor.addClass('active');
    });
 
-   $('.se4_text li, .site_btn, tbody a').mouseleave(function(){
+   $('.se4_text li, .site_btn, tbody a, .menu li').mouseleave(function(){
        cursor.removeClass('active');
    });
 
