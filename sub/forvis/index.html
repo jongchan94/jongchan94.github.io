@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="박종찬">
+	<meta name="description" content="웹 표준 준수한 사이트">
+	<meta name="keywords" content="웹 표준, 웹접근성, 사이트">
+	<meta name="generator" content="brackets">
+ 	<title>웹 표준 사이트</title>
+	
+	<!--웹폰트-->
+	<link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600,600italic,700,700italic,800,800italic">
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+	
+</head>
+<body>
+	<div id="wrap">
+	
+	<nav id="header_topmanu">
+		<div class="container">
+			<h1 class="ir_su">헤더 탑 메뉴</h1>
+				<div class="top_menu clearfix">
+					<a href="#"><img src="image/top_icon_02.gif" alt="이미지1"><span class="ir_pm">아이콘1</span></a>
+					<a href="#"><img src="image/top_icon_03.gif" alt="이미지2"><span class="ir_pm">아이콘2</span></a>
+					<a href="#"><img src="image/top_icon_04.gif" alt="이미지3"><span class="ir_pm">아이콘3</span></a>
+					<a href="#"><span>HOME</span></a>
+					<a href="#"><span>LOGIN</span></a>
+					<a href="#"><span>JOIN</span></a>
+					<a href="#"><span>NOTICE</span></a>
+					<a href="#"><span>SITEMAP</span></a>
+				</div>
+		</div>
+	</nav>	
+	<!--header_topmanu-->
+	
+	<header id="header">
+		<div class="container">
+			<h1 class="ir_su">로고</h1>
+			<a href="#"><img src="image/logo_03.png"><span class="ir_pm">로고</span></a>
+			
+			<div class="header_mainmenu clearfix">
+				<h1 class="ir_su">메인 메뉴</h1>
+				
+					<ul class="clearfix">
+						<li>
+							<a href="sub/sub01.html">회사소개</a>
+							<ul class="submenu">
+								<li><a href="sub/sub01.html">CEO인사말</a></li>
+								<li><a href="sub/sub02.html">회사연락처</a></li>
+								<li><a href="sub/sub03.html">찾아오시는길</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub/sub04.html">기술개발</a>
+							<ul class="submenu">
+								<li><a href="sub/sub04.html">기술개발</a></li>
+								<li><a href="sub/sub05.html">머신비전기술</a></li>
+								<li><a href="sub/sub06.html">소프트웨어개발</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub/sub07.html">장비소개</a>
+							<ul class="submenu">
+								<li><a href="sub/sub07.html">쉴드캔검사장비</a></li>
+								<li><a href="sub/sub08.html">홈키검사장비</a></li>
+								<li><a href="sub/sub09.html">핸들러 외</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="sub/sub10.html">고객센터</a>
+							<ul class="submenu">
+								<li><a href="sub/sub10.html">뉴스 및 공지</a></li>
+								<li><a href="sub/sub11.html">온라인상담문의</a></li>
+							</ul>
+						</li>
+					</ul>
+			</div>
+		</div>
+	</header>
+	<!--//header-->
+	
+	<section id="section">
+		<div class="container">
+			<h2 class="ir_su">컨텐츠 영역</h2>
+			<article class="titie">
+				<h2>Automation Expert</h2>
+				<h2>풍부한 경험으로 완성되는 성공적인 자동화기술,포비스가 함께합니다.</h2>
+			</article>
+			
+			<article class="box">
+				<a href="#"><img src="image/box_01.png" alt="이미지1"></a>
+				<a href="#"><img src="image/box_02.png" alt="이미지2"></a>
+				<a href="#"><img src="image/box_03.png" alt="이미지3"></a>
+				<a href="#"><img src="image/box_04.png" alt="이미지4"></a>
+				<a href="#"><img src="image/box_05.png" alt="이미지5"></a>
+				<a href="#"><img src="image/box_06.png" alt="이미지6"></a>
+			</article>
+			
+		</div>
+	</section>
+	<!--//section-->
+	
+	<footer id="footer">
+		<div class="container">
+			<h2 class="ir_su">푸터 영역</h2>
+			<div class="footer">
+				<ul>
+					<li><a href="#">홈페이지이용약관</a></li>
+					<li><a href="#">개인정보취급방침</a></li>
+					<li><a href="#">이메일무단수집거부</a></li>
+					<li><a href="#">공지사항</a></li>
+				</ul>
+			</div>
+			
+			<address>
+				주식회사 포비스 전화 031-750-0485 팩스 031-750-0486<br>
+				Copyright ⓒ 주식회사 포비스 All rights reserved.
+			</address>
+		</div>
+	</footer>
+	 <!--//footer-->
+	 
+	</div>
+	<!--//wrap-->
+	<script src="script/jquery-3.4.1.js"></script>
+	<script>
+		$(document).ready(function(){
+			
+			$(".header_mainmenu > ul > li").mouseover(function(){
+				$(this).find(".submenu").stop().slideDown(200);
+			});
+			$(".header_mainmenu > ul > li").mouseout(function(){
+				$(this).find(".submenu").stop().slideUp(200);
+			});
+		});
+	</script>
+</body>
+</html>

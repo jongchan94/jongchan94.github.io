@@ -1,0 +1,40 @@
+
+.clearfix::before,
+.clearfix::after{ content: ''; display: block; clear: both;}
+
+body{
+    background-color: #222;
+}
+
+.container{
+    width: 1200px;
+    max-width: 1200px;
+    height: inherit;
+}
+
+#header{
+    width: 100%;
+    height: 30vh;
+    background-color: #333;
+}
+
+#section1{
+    float: left;
+    width: 50%;
+    height: 100vh;
+    background-color: #444;
+}
+
+#section2{
+    float: left;
+    width: 50%;
+    height: 50vh;
+    background-color: #555;
+}
+
+#section3{
+    float: left;
+    width: 50%;
+    height: 50vh;
+    background-color: #666;
+}

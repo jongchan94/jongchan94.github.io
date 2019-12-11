@@ -1,0 +1,161 @@
+@charset "utf-8";
+
+/*레이아웃*/
+#wrap{ width: 100%;}
+#header_topmanu{height: 35px; background: #373a3f;}
+#header{height: 90px;}
+#section{
+	position: relative;
+	height: 697px; 
+	background: url(../image/img1.png) center top no-repeat;
+	background-size: 100% 100%;
+	border-top: 5px solid #009bbe;
+}
+#footer{height: 110px; background: #111;}
+
+/*container*/
+.container {
+	width: 1200px;
+	margin: 0 auto;
+	height: inherit;
+	
+}
+
+/*헤더 탑 메뉴*/
+
+#header_topmanu .top_menu {float: right;}
+#header_topmanu .top_menu img {}
+#header_topmanu .top_menu a{ 
+	display: inline-block; 
+	color: #fff;
+}
+#header_topmanu .top_menu a span{ 
+	margin: 0 5px -14px 0px; 
+	font-size: 14px; 
+	font-weight: 500;
+}
+
+#header_topmanu .top_menu a span:last-child{
+	padding-right: 10px;
+}
+/*헤더*/
+
+#header img{ margin: 15px 0;}
+
+.header_mainmenu{ 
+	float: right;
+	width: 700px;
+	margin-top: -50px;
+}
+.header_mainmenu ul{}
+.header_mainmenu ul li{
+	position: relative;
+	float: left;
+	width: 24%;
+	margin-top: 5px;
+	text-align: center;		
+}
+.header_mainmenu ul li a{
+	padding: 10px;
+	font-size: 20px;
+	font-weight: bold;
+	display: block;
+}
+.header_mainmenu ul li ul.submenu{
+	position: absolute;
+	left: 5px;
+	top: 40px;
+	z-index: 9999;
+	display: none;
+} 
+.header_mainmenu ul li ul.submenu li{
+	width: 100%;
+}
+.header_mainmenu ul li ul.submenu li a{
+	font-size: 14px;
+	background: rgba(1,108,147,0.8);
+	opacity: 0.9;
+	color: #fff;
+	margin: -3px 0;
+	font-weight: 500;
+}
+.header_mainmenu ul li ul.submenu li a:hover{
+	color: #cbf5ff;
+}
+
+
+/*컨텐츠 영역*/
+
+.titie{}
+.titie h2{
+	position: absolute;
+	display: block;
+	top:25%;
+	color: #fff;
+	left: 30%;
+	font-size: 6em;
+	font-family: 'Noto Sans KR', sans-serif;
+	text-shadow: 2px 2px 10px rgba(1,1,1,0.5),
+	-2px -2px 10px rgba(1,1,1,0.5);
+}
+
+.titie h2:last-child{
+	position: absolute;
+	display: block;
+	top:42%;
+	left: 30.5%;
+	font-size: 1.8em;
+}
+
+.box{ 
+	position: absolute;
+	bottom: 100px;
+ 	height: 110px;
+	background: #424344;
+}
+.box img{ 
+	display: inline-block;
+	box-sizing: content-box;
+	margin: -2px;
+}
+
+/*푸터 영역*/
+
+.footer{
+	text-align: center;
+	padding: 5px 0 0 20px;;
+}
+.footer ul {
+} 
+.footer ul li {
+	position: relative;
+	display: inline-block;
+	padding: 15px 10px 10px 0px;
+}
+
+.footer ul li:before{
+	position: absolute;
+	content: '';
+	width: 1px;
+	height: 12px;
+	background: #888;
+	top: 20px;
+	right: 0;
+}
+.footer ul li a{
+	color: #a7a7a7;
+	font-size: 13px;
+} 
+
+.footer ul li:last-child:before{
+	width: 0;
+	height: 0;
+}
+address{
+	text-align: center;
+	color: #a7a7a7;
+}
+
+
+
+
