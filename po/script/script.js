@@ -1,92 +1,8 @@
 
-var dot = $("#dot > ul > li");
-var cont = $("section");
-
-
-dot.click(function(e){
-    e.preventDefault();
-    var target = $(this);
-    var index = target.index();
-    //alert(index);
-    var section = cont.eq(index);
-    var offset = section.offset().top;
-    $("html,body").animate({ scrollTop:offset },600,"easeInOutExpo");
-});
-
-
-$(window).scroll(function(){
-    var wScroll = $(this).scrollTop();
-    
-    if(wScroll >= cont.eq(0).offset().top){
-        dot.removeClass("active");
-        dot.eq(0).addClass("active");
-    }
-
-    if(wScroll >= cont.eq(1).offset().top){
-        dot.removeClass("active");
-        dot.eq(1).addClass("active");
-
-        if (wScroll >= $("h2").offset().top - $(window).height() / 2) {
-            $("h2").addClass("active");
-        }
-    }
-    
-    if(wScroll >= cont.eq(2).offset().top - $(window).height()/3){
-
-         dot.removeClass("active");
-         dot.eq(2).addClass("active");
-
-         $('#section3').addClass("active_bg");
-
-
-        if (wScroll >= $(".sec_site1").offset().top - $(window).height() / 2) {
-            $(".sec_site1").addClass("active");
-        }
-        if (wScroll >= $(".sec_site2").offset().top - $(window).height() / 1.7) {
-            $(".sec_site2").addClass("active");
-        }
-        if (wScroll >= $(".sec_site3").offset().top - $(window).height() / 0.2) {
-            $(".sec_site3").addClass("active");
-        }
-        if (wScroll >= $(".sec_site4").offset().top - $(window).height() / 0.2) {
-            $(".sec_site4").addClass("active");
-        }
-
-        //   TweenLite.to("#section3", 0.5, {
-        //      backgroundColor:'#040404',
-        //      ease: Power4.easeIn
-        //  });
-    }
-
-
-
-    if(wScroll >= cont.eq(3).offset().top){
-        dot.removeClass("active");
-        dot.eq(3).addClass("active"); 
-    }
-
-    if(wScroll >= cont.eq(4).offset().top){
-        dot.removeClass("active");
-        dot.eq(4).addClass("active"); 
-    }
-
-    /*
-    if(wScroll >= cont.eq(4).offset().top){
-        dot.removeClass("active");
-        dot.eq(4).addClass("active");
-    }
-    if(wScroll >= cont.eq(5).offset().top){
-        dot.removeClass("active");
-        dot.eq(5).addClass("active");
-    }
-    if(wScroll >= cont.eq(6).offset().top){
-        dot.removeClass("active");
-        dot.eq(6).addClass("active");
-    }
-*/
-});
 
 var nav = $("#nav ul li");
+var cont = $("section");
+
 
 nav.click(function(e){
     e.preventDefault();
@@ -108,10 +24,28 @@ $(window).scroll(function(){
     if(wScroll >= cont.eq(1).offset().top){
         nav.removeClass("active");
         nav.eq(1).addClass("active");
+
+        if (wScroll >= $(".se2_about > p").offset().top - $(window).height() ) {
+            $(".se2_about > p").addClass("active");
+        }
     }
     if(wScroll >= cont.eq(2).offset().top){
         nav.removeClass("active");
         nav.eq(2).addClass("active");
+
+        if (wScroll >= $(".sec_site1").offset().top - $(window).height() / 2) {
+            $(".sec_site1").addClass("active");
+        }
+        if (wScroll >= $(".sec_site2").offset().top - $(window).height() / 1.7) {
+            $(".sec_site2").addClass("active");
+        }
+        if (wScroll >= $(".sec_site3").offset().top - $(window).height() / 2.5) {
+            $(".sec_site3").addClass("active");
+        }
+        if (wScroll >= $(".sec_site4").offset().top - $(window).height() / 3.0) {
+            $(".sec_site4").addClass("active");
+        }
+
     }
     if(wScroll >= cont.eq(3).offset().top){
         nav.removeClass("active");
@@ -119,8 +53,7 @@ $(window).scroll(function(){
     }
     if(wScroll >= cont.eq(4).offset().top){
         nav.removeClass("active");
-        nav.eq(4).addClass("active");
-    }
+        nav.eq(4).addClass("active");    }
 });
 
 
@@ -183,7 +116,7 @@ $('.mNav').click(function(){
 
     */ 
 
-
+    //  마우스 커서
    var cursor = $('.cursor'),
    mouseX = 0,
    mouseY = 0;
@@ -208,47 +141,11 @@ $('.mNav').click(function(){
         
     });
 
-   $('.se4_text li, .site_btn, tbody a, .menu li').mouseenter(function(){
+
+   $('.site_btn, tbody a, .menu li').mouseenter(function(){
        cursor.addClass('active');
    });
 
-   $('.se4_text li, .site_btn, tbody a, .menu li').mouseleave(function(){
+   $('.site_btn, tbody a, .menu li').mouseleave(function(){
        cursor.removeClass('active');
    });
-
-
-   $('.se4_tail').click(function(){
-       $('.ani1').show();
-       $('.ani2').hide();
-       $('.ani3').hide();
-       $('.ani4').hide();
-       $('.ani5').hide();
-   });
-
-   $('.se4_dot').click(function(){
-    $('.ani1').hide();
-    $('.ani2').show();
-    $('.ani3').hide();
-    $('.ani4').hide();
-    $('.ani5').hide();
-});
-        //text-animation
-/*
-        if(wScroll >= cont.eq(0).offset().top - $(window).height()/3){
-            cont.eq(0).addClass('show');
-        }
-        if(wScroll >= cont.eq(1).offset().top  - $(window).height()/3){
-            cont.eq(1).addClass('show');
-        }
-        if(wScroll >= cont.eq(2).offset().top  - $(window).height()/3){
-            cont.eq(2).addClass('show');
-        }
-        if(wScroll >= cont.eq(3).offset().top  - $(window).height()/3){
-            cont.eq(3).addClass('show');
-        }
-        if(wScroll >= cont.eq(4).offset().top  - $(window).height()/3){
-            cont.eq(4).addClass('show');
-        }
-    */
-
-
